@@ -9,6 +9,7 @@ public class MyStepDeft
 {
 
     LoginPage loginPage = new LoginPage();
+    HomePage homePage = new HomePage();
 
 
 
@@ -25,7 +26,7 @@ public class MyStepDeft
     @Then("^User should be Login successfully$")
     public void user_should_be_Login_successfully()
     {
-
+        homePage.VerifyUserisLoginSuccessfully();
     }
     @Given("^User is on Login Page$")
     public void userIsOnLoginPage()
